@@ -204,6 +204,18 @@ footer p{margin:.4em 0}
   .vids>div{flex:0 0 82%;scroll-snap-align:start}
   .ficha .vids{margin-right:-24px;padding-right:24px}
 }
+
+@media (max-width:600px){
+  .top .wrap{gap:10px;padding-top:10px;padding-bottom:10px}
+  .menu-btn{width:42px;height:42px}
+  .brand{gap:10px}
+  .brand img{width:42px;height:42px}
+  .brand b{font-size:17px}
+  .brand small{white-space:normal;font-size:12px;line-height:1.3}
+  .brand small .sep{display:none}
+  .brand small .pais{display:block;font-weight:700;color:var(--verde)}
+  .top .btn{width:44px;height:44px;padding:0;justify-content:center;flex:none}
+}
 </style>
 </head>
 <body>
@@ -213,7 +225,7 @@ footer p{margin:.4em 0}
     <button class="menu-btn" id="abrirMenu" aria-label="Abrir menú"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     <div class="brand">
       <img src="img/ana.jpg" alt="Ana Pajares">
-      <div><b>Ana Pajares</b><small>Consultora independiente Just · Perú</small></div>
+      <div><b>Ana Pajares</b><small>Consultora independiente Just<span class="sep"> · </span><span class="pais">Perú 🇵🇪</span></small></div>
     </div>
     <a class="btn" data-wa="Hola Ana, vi tu página y quiero información sobre los productos Just 🌿" href="#">
       <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3z"/></svg>
@@ -261,7 +273,7 @@ footer p{margin:.4em 0}
     <span class="kicker">Historias reales</span>
     <h2 style="font-size:clamp(28px,4vw,38px)">Personas que ya viven el bienestar Just</h2>
     <p class="pregunta" style="font-size:19px;color:var(--suave);max-width:40em">Mira cómo lo usan y lo que cuentan quienes ya probaron los productos. Toca un video para verlo aquí mismo.</p>
-    <div class="vids" data-vids='[["2N4IAhNgQ1k", "Jorge Bardales, campeón peruano de jiu-jitsu, y la Crema de Enebro"], ["exO7ET4XoXY", "Clientes cuentan su experiencia con Essential³ · Just Perú Oficial"], ["nvdft0zLxYs", "Mi primera experiencia con los productos Just"], ["2YhigPrWstY", "Tomasa y el Óleo 31 para sus dolores de cabeza"]]'></div>
+    <div class="vids" data-vids='[["2N4IAhNgQ1k", "Jorge Bardales, campeón de jiu-jitsu, y la Crema de Enebro"], ["exO7ET4XoXY", "Clientes cuentan su experiencia con Essential³ · Just Perú Oficial"], ["1WzsOkVf5Ws", "Gala y su dolor de espalda: Crema de Enebro y Óleo 31"], ["QOIu8jFVwH0", "Natalia y la Esencia de Melisa para su bebé · Just Perú Oficial"]]'></div>
   </div>
 </section>
 
@@ -309,7 +321,7 @@ footer p{margin:.4em 0}
     </div>
 
     <h3 style="font-size:22px;margin:6px 0 14px">🎥 Historias reales</h3>
-    <div class="vids" style="margin-bottom:30px" data-vids='[["exO7ET4XoXY", "Clientes cuentan su experiencia con Essential³ · Just Perú Oficial"], ["FElkCuXpA8Y", "Testimonio sobre los aceites esenciales Just"]]'></div>
+    <div class="vids" style="margin-bottom:30px" data-vids='[["exO7ET4XoXY", "Clientes cuentan su experiencia con Essential³ · Just Perú Oficial"]]'></div>
 
     <div class="cta"><p>¿No sabes qué aroma va contigo? Cuéntame cómo te sientes y te recomiendo el tuyo.</p><a class="btn" data-wa="Hola Ana, quiero saber qué aceite de aromaterapia me conviene 🌿" href="#">Escríbeme</a></div>
   </div>
@@ -341,7 +353,7 @@ footer p{margin:.4em 0}
     </div>
 
     <h3 style="font-size:22px;margin:6px 0 14px">🎥 Historias reales</h3>
-    <div class="vids" style="margin-bottom:30px" data-vids='[["2YhigPrWstY", "Tomasa y el Óleo 31 para sus dolores de cabeza"], ["1WzsOkVf5Ws", "Gala y su dolor lumbar: Crema de Enebro y Óleo 31"], ["ftNmN3wyqmg", "Testimonio usando Óleo 31 y Crema de Enebro"]]'></div>
+    <div class="vids" style="margin-bottom:30px" data-vids='[["2N4IAhNgQ1k", "Jorge Bardales, campeón de jiu-jitsu, y la Crema de Enebro"], ["1WzsOkVf5Ws", "Gala y su dolor de espalda: Crema de Enebro y Óleo 31"]]'></div>
     <div class="testis"><div class="testi"><div class="stars">★★★★★</div><blockquote>“Hace dos años me compré el Óleo 31 y todavía me queda. Son de excelente calidad.”</blockquote><cite>Miry · comentario en Zancada · <a href="https://zancada.com/swiss-just-bienestar-natural/" target="_blank" rel="noopener">ver fuente</a></cite></div></div>
 
     <a class="video" href="https://www.youtube.com/watch?v=g1mkTTekReM" target="_blank" rel="noopener">
@@ -376,7 +388,7 @@ footer p{margin:.4em 0}
       <article class="prod" data-id="lavanda" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/lavanda.webp" alt="Aceite esencial de Lavanda Just" loading="lazy"><div class="info"><h3>Aceite esencial de Lavanda</h3><p>Una gota en la almohada para crear un ambiente sereno.</p><a data-wa="Hola Ana, quiero información del Aceite de Lavanda Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
     </div>
     <h3 style="font-size:22px;margin:6px 0 14px">🎥 Historias reales</h3>
-    <div class="vids" style="margin-bottom:30px" data-vids='[["icCQ3__H9OM", "Gardenia Nights, una alternativa natural para el buen dormir"]]'></div>
+    <div class="vids" style="margin-bottom:30px" data-vids='[["QOIu8jFVwH0", "Natalia y la Esencia de Melisa para el baño de su bebé · Just Perú Oficial"], ["icCQ3__H9OM", "Una mamá y su hija usan Gardenia Nights para dormir mejor"]]'></div>
     <div class="cta"><p>Te armo un ritual de noche a tu medida. Escríbeme y lo conversamos.</p><a class="btn" data-wa="Hola Ana, quiero dormir mejor y manejar el estrés, ¿qué me recomiendas?" href="#">Escríbeme</a></div>
   </div>
 </section>
@@ -401,8 +413,6 @@ footer p{margin:.4em 0}
       <article class="prod" data-id="eucalipto" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/eucalipto.webp" alt="Aceite esencial de Eucalipto Just" loading="lazy"><div class="info"><h3>Aceite esencial de Eucalipto</h3><p>Aroma fresco para inhalaciones y para despejar en épocas de frío.</p><a data-wa="Hola Ana, quiero información del Aceite de Eucalipto Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
       <article class="prod" data-id="tomillo" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/tomillo.webp" alt="Crema de Tomillo Just" loading="lazy"><div class="info"><h3>Crema de Tomillo</h3><p>El clásico de la familia para frotar en pecho y espalda.</p><a data-wa="Hola Ana, quiero información de la Crema de Tomillo Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
     </div>
-    <h3 style="font-size:22px;margin:6px 0 14px">🎥 Historias reales</h3>
-    <div class="vids" style="margin-bottom:30px" data-vids='[["xNDdC3BKw_Y", "Testimonio de una familia con la Crema de Tomillo"], ["GNMvWf2xIUo", "Eucasol: respira libremente · Gaby Miranda"]]'></div>
     <div class="cta"><p>Prepara tu botiquín natural para la familia. Te ayudo a armarlo.</p><a class="btn" data-wa="Hola Ana, quiero productos Just para respirar mejor en casa" href="#">Escríbeme</a></div>
   </div>
 </section>
@@ -428,8 +438,6 @@ footer p{margin:.4em 0}
       <article class="prod" data-id="suncare" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/suncare.webp" alt="Sun Care FPS 30 Just" loading="lazy"><div class="info"><h3>Sun Care FPS 30</h3><p>Protector solar facial con Edelweiss, para todos los días.</p><a data-wa="Hola Ana, quiero información del Sun Care FPS 30 Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
       <article class="prod" data-id="teatree" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/teatree.webp" alt="Aceite de Tea Tree, Manuka y Rosalina Just" loading="lazy"><div class="info"><h3>Tea Tree, Manuka y Rosalina</h3><p>Purifica y ayuda a cuidar la piel con imperfecciones.</p><a data-wa="Hola Ana, quiero información del Tea Tree Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
     </div>
-    <h3 style="font-size:22px;margin:6px 0 14px">🎥 Historias reales</h3>
-    <div class="vids" style="margin-bottom:30px" data-vids='[["R3lMJJqv6h8", "Rutina facial Vital Just y testimonios"], ["8ikgwYEN4yM", "Piel radiante con Vital Just · consultora en Perú"]]'></div>
     <div class="cta"><p>Dime tu tipo de piel y te propongo una rutina simple y efectiva.</p><a class="btn" data-wa="Hola Ana, quiero una rutina de cuidado de piel con Just" href="#">Escríbeme</a></div>
   </div>
 </section>
@@ -451,6 +459,8 @@ footer p{margin:.4em 0}
         <li><b>Carrera de liderazgo:</b> si formas tu propio grupo, sumas un porcentaje por las ventas de tus consultores y bonos mensuales por crecimiento.</li>
       </ul>
     </div>
+        <h3 style="font-size:22px;margin:6px 0 14px">🎥 Historias de consultoras · Just Perú Oficial</h3>
+    <div class="vids" style="margin-bottom:30px" data-vids='[["bNIpJQYSaPc", "Gisselle, docente y mamá: Just la ayudó a salir adelante con su familia"], ["QOIu8jFVwH0", "Natalia, radióloga: de clienta a consultora Just"]]'></div>
     <div class="cta"><p>¿Te animas? Escríbeme y te explico cómo empezar, sin compromiso.</p><a class="btn" data-wa="Hola Ana, quiero unirme a tu equipo y ser Consultora Just 💼" href="#">Quiero ser Consultora Just</a></div>
   </div>
 </section>

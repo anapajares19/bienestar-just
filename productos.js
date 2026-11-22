@@ -8,8 +8,8 @@ window.PRODUCTOS = {
     uso: ["Cabeza: 1 gota en sienes, frente y nuca, con un masaje suave.", "Músculos: unas gotas en la zona tensa y masajear.", "Inhalación: 1 a 3 gotas en un pañuelo o en las palmas y respirar profundo."],
     ingredientes: "31 aceites esenciales, entre ellos lavanda, menta silvestre, eucalipto, romero, salvia, tomillo, manzanilla y melisa.",
     testimonios: [["Hace dos años me compré el Óleo 31 y todavía me queda. Son de excelente calidad.", "Miry, comentario en Zancada"]],
-    historias: [["2YhigPrWstY", "Tomasa cuenta cómo el Óleo 31 la ayuda con sus dolores de cabeza"], ["ftNmN3wyqmg", "Testimonio usando Óleo 31 y Crema de Enebro"]],
-    videos: [["I9l35yfZd3w", "Óleo 31 · Swiss Just con Claudia Franco"], ["R6vC5p7MOeI", "Usos del Óleo 31"], ["ubqVmnCav0M", "Testimonio de Julissa sobre los productos Just"]]
+    historias: [["1WzsOkVf5Ws", "Gala cuenta cómo la Crema de Enebro y el Óleo 31 la ayudaron con su dolor de espalda"], ["exO7ET4XoXY", "Clientes cuentan cómo usan el Óleo 31 y el kit Essential³ · Just Perú Oficial"]],
+    videos: [["149_ixp7c8g", "Óleo 31 · Just México Oficial"]]
   },
   crema31: {
     nombre: "Crema Herbal 31", img: "img/crema31.webp",
@@ -18,7 +18,7 @@ window.PRODUCTOS = {
     uso: ["Aplicar una pequeña cantidad con el dedo en sienes y nuca.", "Masajear suavemente en la zona que necesites."],
     ingredientes: "31 aceites esenciales, manteca de karité, cera de candelilla y mentol.",
     testimonios: [],
-    videos: [["0lGCfBoUUxc", "Crema Herbal 31 · Just Perú Oficial"], ["65dC3FMg99Q", "Crema Herbal 31 · Just Hilda"]]
+    videos: [["0lGCfBoUUxc", "Crema Herbal 31 · Just Perú Oficial"]]
   },
   enebro: {
     nombre: "Crema de Enebro", img: "img/enebro.webp",
@@ -27,8 +27,8 @@ window.PRODUCTOS = {
     uso: ["Aplicar en cuello, espalda o piernas con un masaje firme.", "Para un efecto más profundo, tomar antes un baño tibio con Esencia para Baño de Enebro."],
     ingredientes: "Aceite esencial de enebro, ciprés, eucalipto y pino, y aceite de soja.",
     testimonios: [],
-    historias: [["2N4IAhNgQ1k", "Jorge Bardales, campeón peruano de jiu-jitsu, usa la Crema de Enebro"], ["1WzsOkVf5Ws", "Gala cuenta cómo la ayudaron la Crema de Enebro y el Óleo 31 con su dolor lumbar"]],
-    videos: [["MEz5AEZPeHs", "Enebro · Swiss Just con Claudia Franco"], ["fQwWGdzmJ-0", "Usos y beneficios de la Crema de Enebro"]]
+    historias: [["2N4IAhNgQ1k", "Jorge Bardales, campeón de jiu-jitsu, usa la Crema de Enebro antes y después de entrenar"], ["1WzsOkVf5Ws", "Gala cuenta cómo la Crema de Enebro y el Óleo 31 la ayudaron con su dolor de espalda"]],
+    videos: [["BTk_buLxwn0", "Crema de Enebro · Just México Oficial"]]
   },
   arnica: {
     nombre: "Gel Cremoso de Árnica", img: "img/arnica.webp",
@@ -37,7 +37,7 @@ window.PRODUCTOS = {
     uso: ["Aplicar una cucharadita en la zona y masajear hasta absorber.", "Puede usarse varias veces al día, según necesidad."],
     ingredientes: "Extracto de árnica, garra del diablo, frankincienso, aceite de almendras dulces y vitamina E.",
     testimonios: [],
-    videos: [["FYFKS6N75R0", "Gel Cremoso de Árnica · Just México Oficial"], ["uzulgDPVQwU", "Gel de Árnica: propiedades y beneficios"]]
+    videos: [["FYFKS6N75R0", "Gel Cremoso de Árnica · Just México Oficial"]]
   },
   balsamo: {
     nombre: "Bálsamo con Árnica y Hamamelis", img: "img/balsamo.webp",
@@ -46,7 +46,7 @@ window.PRODUCTOS = {
     uso: ["Aplicar en las piernas con masaje ascendente, de tobillos a rodillas.", "Frotar en nuca, brazos o piernas después de un día largo."],
     ingredientes: "Extracto de árnica y hamamelis, alcanfor, edelweiss, hipérico, manzanilla, melisa y milenrama.",
     testimonios: [],
-    videos: [["mA7jNujwIto", "Bálsamo · Swiss Just con Claudia Franco"], ["ycCJwgWWtow", "Propiedades y usos del Bálsamo Just"]]
+    videos: [["WPxhjHLc_ms", "Bálsamo con Árnica y Hamamelis · Just Perú Oficial"]]
   },
   lavanda: {
     nombre: "Aceite esencial de Lavanda", img: "img/lavanda.webp",
@@ -55,7 +55,7 @@ window.PRODUCTOS = {
     uso: ["Dormir: 1 gota en la almohada.", "Relajarte: 1 gota en muñecas y sienes.", "Ambiente: unas gotas en el difusor."],
     ingredientes: "100% aceite esencial puro de Lavandula angustifolia.",
     testimonios: [],
-    videos: [["Zk_vEYDidYA", "Aceite Esencial de Lavanda · Just México Oficial"], ["_bbtYYPiLtg", "Aceite esencial de Lavanda Just · Yo te recomiendo"]]
+    videos: [["Zk_vEYDidYA", "Aceite Esencial de Lavanda · Just México Oficial"]]
   },
   antistress: {
     nombre: "Anti-Stress", img: "img/antistress.webp",
@@ -64,7 +64,8 @@ window.PRODUCTOS = {
     uso: ["Aplicar en muñecas, sienes y nuca con un masaje suave.", "Usarlo antes de dormir para promover la relajación.", "Combínalo con el Revitalizador Guduchi en distintos momentos del día: Guduchi para activarte y Anti-Stress para calmarte."],
     ingredientes: "Lavanda, manzanilla, melisa, geranio, rosa damascena, menta piperita, romero y lúpulo, entre otros.",
     testimonios: [],
-    videos: [["SBbglXHUiVM", "Anti-Stress · Just México Oficial"], ["FLP1FRxZQZc", "Anti Stress · Swiss Just con Claudia Franco"]]
+    historias: [["exO7ET4XoXY", "Clientes cuentan cómo el Anti-Stress los ayuda a relajarse en la noche · Just Perú Oficial"]],
+    videos: [["SBbglXHUiVM", "Anti-Stress · Just México Oficial"]]
   },
   harmony: {
     nombre: "Harmony+", img: "img/harmony.webp",
@@ -73,7 +74,7 @@ window.PRODUCTOS = {
     uso: ["1 gota en las palmas, frotar y respirar profundo.", "Unas gotas en el difusor."],
     ingredientes: "Aceites esenciales de limón, lima, naranja, menta silvestre, citronella y lemongrass.",
     testimonios: [],
-    videos: [["IyXMXxghqpI", "Harmony+ · Just Perú Oficial"], ["QL4b_S6JRa4", "Harmony+: cómo usarlo, beneficios y tips"]]
+    videos: [["IyXMXxghqpI", "Harmony+ · Just Perú Oficial"]]
   },
   guduchi: {
     nombre: "Revitalizador Guduchi", img: "img/guduchi.webp",
@@ -82,6 +83,7 @@ window.PRODUCTOS = {
     uso: ["Aplicar en muñecas, sienes y nuca por la mañana o a media tarde.", "Inhalar su aroma cuando sientas cansancio."],
     ingredientes: "Extracto de guduchi, aceites de lima, limón, romero y lavanda, alcanfor y mentol.",
     testimonios: [],
+    historias: [["exO7ET4XoXY", "Clientes cuentan cómo el Guduchi les da energía en el día · Just Perú Oficial"]],
     videos: [["D99pNkdX4aw", "Revitalizador Guduchi · Just Perú Oficial"], ["c-kXFDDajs0", "Revitalizador Guduchi · Just México Oficial"]]
   },
   essential3: {
@@ -91,8 +93,8 @@ window.PRODUCTOS = {
     uso: ["Mañana: Guduchi en muñecas y nuca.", "Durante el día: Óleo 31 en sienes y nuca.", "Noche: Anti-Stress antes de dormir."],
     ingredientes: "Revitalizador Guduchi, Óleo 31 y Anti-Stress en formato roll-on.",
     testimonios: [],
-    historias: [["exO7ET4XoXY", "Testimonios de clientes que usan Essential³ · Just Perú Oficial"]],
-    videos: [["_DXgdupgQO8", "Kit Essential³: el secreto de un gran día"], ["1CnOugTya9g", "Essential³: ritual diario"]]
+    historias: [["exO7ET4XoXY", "Clientes cuentan su experiencia con Essential³ · Just Perú Oficial"]],
+    videos: [["lmVAJyVO_Ls", "Essential³ · Just México Oficial"]]
   },
   gardenia: {
     nombre: "Gardenia Nights", img: "img/gardenia.webp",
@@ -101,8 +103,8 @@ window.PRODUCTOS = {
     uso: ["Aplicar en muñecas, cuello y detrás de las orejas antes de dormir.", "Respirar profundo unos segundos."],
     ingredientes: "Aceite esencial de gardenia, jazmín, patchouli, naranja, cedro y geranio, entre otros.",
     testimonios: [],
-    historias: [["icCQ3__H9OM", "Gardenia Nights, una alternativa natural para el buen dormir"]],
-    videos: [["xOYJrMV7wik", "Gardenia Nights · Just México Oficial"], ["qmtsw7BuQ8Y", "Gardenia Nights · María José, consultora Just"]]
+    historias: [["icCQ3__H9OM", "Una mamá y su hija cuentan cómo usan Gardenia Nights para dormir mejor"]],
+    videos: [["ebnVGQTsv18", "Gardenia Nights · Just Perú Oficial"], ["xOYJrMV7wik", "Gardenia Nights · Just México Oficial"]]
   },
   melisa: {
     nombre: "Esencia para baño de Melisa", img: "img/melisa.webp",
@@ -111,7 +113,8 @@ window.PRODUCTOS = {
     uso: ["Agregar al agua tibia de la tina y disfrutar el baño antes de acostarte.", "Se puede combinar con otras esencias de baño Just."],
     ingredientes: "Extracto de melisa, aceites esenciales de lavanda y manzanilla, aceite de almendras dulces y de girasol.",
     testimonios: [],
-    videos: [["tU0J0O-4Fb0", "Esencia de Melisa · Just México Oficial"], ["mv2TYZ-VqQE", "Esencia para baño de Melisa · Just Hilda"]]
+    historias: [["QOIu8jFVwH0", "Natalia conoció Just gracias a la Esencia de Melisa para el baño de su bebé · Just Perú Oficial"]],
+    videos: [["tU0J0O-4Fb0", "Esencia de Melisa · Just México Oficial"]]
   },
   cremalavanda: {
     nombre: "Crema de Lavanda", img: "img/cremalavanda.webp",
@@ -120,7 +123,7 @@ window.PRODUCTOS = {
     uso: ["Masajear en pies, manos o cuello antes de dormir.", "Aplicar sobre la piel que necesite alivio."],
     ingredientes: "Aceite esencial de lavanda, extracto de hamamelis, aloe vera, glicerina y bisabolol.",
     testimonios: [],
-    videos: [["XzR0uB28zQI", "Crema de Lavanda · Just México Oficial"], ["9ZavBcsUhE0", "Cómo usar la Crema de Lavanda Just"]]
+    videos: [["XzR0uB28zQI", "Crema de Lavanda · Just México Oficial"]]
   },
   eucasol: {
     nombre: "Eucasol, spray de eucalipto", img: "img/eucasol.webp",
@@ -129,8 +132,7 @@ window.PRODUCTOS = {
     uso: ["Rociar en la almohada, el pijama, un pañuelo o la ropa a la altura del pecho.", "Rociar dentro de la ducha caliente y respirar el vapor."],
     ingredientes: "Aceite esencial de eucalipto, alcanfor, clavo, menta silvestre, pino, romero, enebro y mentol.",
     testimonios: [],
-    historias: [["GNMvWf2xIUo", "Eucasol: respira libremente · Gaby Miranda"]],
-    videos: [["wILR4CbI9d8", "Eucasol: propiedades y usos"], ["DQMzah7PpF8", "Respirar con eucalipto · Just Argentina Oficial"]]
+    videos: [["al08ZNEU46A", "Eucasol · Just México Oficial"], ["DQMzah7PpF8", "Respira con eucalipto · Just Argentina Oficial"]]
   },
   eucalipto: {
     nombre: "Aceite esencial de Eucalipto", img: "img/eucalipto.webp",
@@ -139,7 +141,7 @@ window.PRODUCTOS = {
     uso: ["Inhalaciones: 2 o 3 gotas en un recipiente con agua caliente.", "Difusor: unas gotas para purificar el ambiente."],
     ingredientes: "100% aceite esencial puro de Eucalyptus globulus.",
     testimonios: [],
-    videos: [["OwMt6Ju1AVI", "Aceite Esencial de Eucalipto · Just México Oficial"], ["LCgGEMFLv4w", "Aceite de Eucalipto Just: tips y beneficios"]]
+    videos: [["OwMt6Ju1AVI", "Aceite Esencial de Eucalipto · Just México Oficial"]]
   },
   tomillo: {
     nombre: "Crema de Tomillo", img: "img/tomillo.webp",
@@ -148,8 +150,7 @@ window.PRODUCTOS = {
     uso: ["Aplicar una pequeña cantidad en pecho, garganta, espalda y plantas de los pies, y masajear."],
     ingredientes: "Aceite esencial de tomillo, alcanfor, eucalipto, limón, manzanilla, pino, romero y aceite de soja.",
     testimonios: [],
-    historias: [["xNDdC3BKw_Y", "Testimonio de una familia con la Crema de Tomillo"]],
-    videos: [["Nm-Tr9-uvGg", "Tomillo · Swiss Just con Claudia Franco"], ["xQiwB-5G3YQ", "Para qué sirve la Crema de Tomillo"]]
+    videos: [["wGJNB8Z1Kdw", "Crema de Tomillo · Just México Oficial"]]
   },
   serumvital: {
     nombre: "Sérum Cuidado Intensivo Vital Just", img: "img/serumvital.webp",
@@ -158,8 +159,7 @@ window.PRODUCTOS = {
     uso: ["Aplicar unas gotas en rostro y cuello limpios, por la noche.", "Continuar con tu crema Vital Just."],
     ingredientes: "Edelweiss, agua floral de rosa alpina, bakuchiol, acmella, vitamina C y vitamina E.",
     testimonios: [],
-    historias: [["R3lMJJqv6h8", "Rutina facial Vital Just y testimonios"]],
-    videos: [["gIIMXjYTqps", "Sérum Vital Just · Just México Oficial"], ["wuqkPe7sias", "Sérum Vital Just"]]
+    videos: [["gcUPqq1Ux50", "Línea para el rostro Vital Just · Just Perú Oficial"], ["ou12gU0a4GE", "Vital Just Nueva Generación · Just Perú Oficial"]]
   },
   cremadia: {
     nombre: "Crema Humectante de Día Vital Just", img: "img/cremadia.webp",
@@ -168,7 +168,6 @@ window.PRODUCTOS = {
     uso: ["Aplicar por la mañana sobre el rostro limpio.", "Terminar con protector solar Sun Care FPS 30."],
     ingredientes: "Edelweiss y extractos botánicos de la línea Vital Just.",
     testimonios: [],
-    historias: [["8ikgwYEN4yM", "Piel radiante con Vital Just · consultora en Perú"]],
     videos: [["bdRkIfJ0l9Y", "Crema Hidratante de Día Vital Just · Just Perú Oficial"], ["I__Y7MOHV-4", "Vital Just para piel madura · Just Perú Oficial"]]
   },
   suncare: {
@@ -178,7 +177,7 @@ window.PRODUCTOS = {
     uso: ["Aplicar cada mañana como último paso de tu rutina.", "Reaplicar si pasas mucho tiempo al sol."],
     ingredientes: "Edelweiss, physalis, aceite de coco, manteca de karité y vitaminas C y E.",
     testimonios: [],
-    videos: [["RS_dBnwVbUQ", "Sun Care, protector solar Just"]]
+    videos: []
   },
   teatree: {
     nombre: "Tea Tree, Manuca y Rosalina", img: "img/teatree.webp",
@@ -187,6 +186,6 @@ window.PRODUCTOS = {
     uso: ["Aplicar 1 gota directamente en la zona con imperfecciones.", "Se puede agregar unas gotas a tu crema habitual."],
     ingredientes: "Aceites esenciales de tea tree, manuca, rosalina y manzanilla.",
     testimonios: [],
-    videos: [["PyO8PW6W5CY", "Tea Tree, Manuca y Rosalina · Just México Oficial"], ["xao0dX7bBcY", "Tea Tree · Swiss Just con Claudia Franco"]]
+    videos: [["PyO8PW6W5CY", "Tea Tree, Manuca y Rosalina · Just México Oficial"]]
   }
 };
