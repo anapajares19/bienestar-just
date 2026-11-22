@@ -171,7 +171,7 @@ footer p{margin:.4em 0}
 
 /* Historias */
 .historias{scroll-margin-top:80px;padding:56px 0;background:#fff;border-bottom:1px solid var(--borde)}
-.historias .vids{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.historias .vids{grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
 
 @media (max-width:820px){
   .hero .wrap,.intro,.sobre .wrap{grid-template-columns:1fr}
@@ -216,9 +216,46 @@ footer p{margin:.4em 0}
   .brand small .pais{display:block;font-weight:700;color:var(--verde)}
   .top .btn{width:44px;height:44px;padding:0;justify-content:center;flex:none}
 }
+
+/* ===== Fondo pastel botánico ===== */
+body{background:#FBF8F2;position:relative}
+body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:
+  radial-gradient(65vmax 55vmax at -5% -5%, rgba(214,231,205,.95), transparent 62%),
+  radial-gradient(55vmax 50vmax at 105% 18%, rgba(246,212,208,.85), transparent 60%),
+  radial-gradient(62vmax 58vmax at 0% 72%, rgba(196,219,238,.95), transparent 62%),
+  radial-gradient(50vmax 45vmax at 100% 100%, rgba(221,236,214,.9), transparent 60%),
+  radial-gradient(40vmax 35vmax at 55% 45%, rgba(250,232,228,.6), transparent 65%),
+  #FBF8F2}
+.deco{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.deco img{position:absolute;opacity:.75}
+.deco .d1{left:-34px;top:70px;width:170px;transform:rotate(-8deg)}
+.deco .d2{right:-20px;top:120px;width:150px;transform:rotate(12deg) scaleX(-1)}
+.deco .d3{left:-10px;bottom:-20px;width:150px;transform:rotate(6deg)}
+.deco .d4{right:-30px;bottom:-30px;width:180px;transform:rotate(-14deg) scaleX(-1)}
+.deco .d5{right:22%;bottom:-40px;width:90px;opacity:.55}
+@media (max-width:820px){.deco img{opacity:.5}.deco .d1{width:110px;left:-40px}.deco .d2{width:100px;right:-34px}.deco .d3{width:100px}.deco .d4{width:120px}.deco .d5{display:none}}
+.top{background:rgba(238,244,234,.82)!important;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.hero{background:transparent!important;position:relative}
+.hero::after{content:"";position:absolute;right:2%;bottom:-10px;width:120px;height:150px;background:url(img/deco/flores_rosa.svg) no-repeat center/contain;opacity:.9;pointer-events:none}
+.temas{background:rgba(251,248,242,.78)!important}
+section.tema{background:transparent!important;position:relative}
+section.tema:nth-of-type(even){background:rgba(255,255,255,.5)!important}
+section.tema::before{content:"";position:absolute;top:18px;width:110px;height:150px;pointer-events:none;opacity:.8;background:no-repeat center/contain}
+section.tema:nth-of-type(odd)::before{right:10px;background-image:url(img/deco/rama_verde.svg)}
+section.tema:nth-of-type(even)::before{left:6px;background-image:url(img/deco/flores_azul.svg)}
+#piel::before{background-image:url(img/deco/rama_rosa.svg)!important}
+#respira::before{background-image:url(img/deco/eucalipto.svg)!important}
+.unete{background:rgba(246,214,211,.45)!important}
+.unete::before{background-image:url(img/deco/flores_rosa.svg)!important}
+.historias{background:rgba(255,255,255,.45)!important}
+.sobre{background:rgba(232,241,247,.55)!important}
+footer{background:rgba(251,248,242,.6)!important}
+.prod,.testi,.guia div,ul.ayuda li{backdrop-filter:blur(2px)}
+@media (max-width:600px){section.tema::before{width:70px;height:100px;top:10px;opacity:.6}.hero::after{width:80px;height:100px;opacity:.7}}
 </style>
 </head>
 <body>
+<div class="deco" aria-hidden="true"><img class="d1" src="img/deco/rama_verde.svg" alt=""><img class="d2" src="img/deco/flores_rosa.svg" alt=""><img class="d3" src="img/deco/flores_azul.svg" alt=""><img class="d4" src="img/deco/rama_rosa.svg" alt=""><img class="d5" src="img/deco/eucalipto.svg" alt=""></div>
 
 <header class="top">
   <div class="wrap">
