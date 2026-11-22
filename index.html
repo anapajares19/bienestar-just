@@ -182,6 +182,28 @@ footer p{margin:.4em 0}
   .top .btn span{display:none}
   section.tema{padding:46px 0}
 }
+
+@media (max-width:600px){
+  .productos{grid-template-columns:1fr 1fr;gap:12px}
+  .prod{border-radius:18px}
+  .prod .info{padding:10px 12px 14px;gap:6px}
+  .prod h3{font-size:16px}
+  .prod p{font-size:13px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .vermas{padding:6px 12px;font-size:14px!important}
+  .prod .info a{font-size:14px!important}
+  .guia{grid-template-columns:1fr 1fr;gap:10px}
+  .guia div{padding:12px 14px}
+  .guia b{font-size:16px}
+  .guia span{font-size:13px}
+  ul.ayuda li{padding:11px 14px 11px 42px;font-size:15px}
+  .intro{margin-bottom:22px;gap:20px}
+}
+
+@media (max-width:600px){
+  .vids,.historias .vids{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;padding-bottom:6px;margin-right:-20px;padding-right:20px}
+  .vids>div{flex:0 0 82%;scroll-snap-align:start}
+  .ficha .vids{margin-right:-24px;padding-right:24px}
+}
 </style>
 </head>
 <body>
@@ -239,7 +261,7 @@ footer p{margin:.4em 0}
     <span class="kicker">Historias reales</span>
     <h2 style="font-size:clamp(28px,4vw,38px)">Personas que ya viven el bienestar Just</h2>
     <p class="pregunta" style="font-size:19px;color:var(--suave);max-width:40em">Mira cómo lo usan y lo que cuentan quienes ya probaron los productos. Toca un video para verlo aquí mismo.</p>
-    <div class="vids" data-vids='[["2N4IAhNgQ1k","Jorge Bardales, campeón peruano de jiu-jitsu, y la Crema de Enebro"],["exO7ET4XoXY","Clientes cuentan su experiencia con Essential³ · Just Perú Oficial"],["2YhigPrWstY","Tomasa y el Óleo 31 para sus dolores de cabeza"],["1WzsOkVf5Ws","Gala y su dolor lumbar: Crema de Enebro y Óleo 31"]]'></div>
+    <div class="vids" data-vids='[["2N4IAhNgQ1k", "Jorge Bardales, campeón peruano de jiu-jitsu, y la Crema de Enebro"], ["exO7ET4XoXY", "Clientes cuentan su experiencia con Essential³ · Just Perú Oficial"], ["nvdft0zLxYs", "Mi primera experiencia con los productos Just"], ["2YhigPrWstY", "Tomasa y el Óleo 31 para sus dolores de cabeza"]]'></div>
   </div>
 </section>
 
@@ -286,10 +308,8 @@ footer p{margin:.4em 0}
       <article class="prod" data-id="essential3" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/essential3.webp" alt="Essential³ Just" loading="lazy"><div class="info"><h3>Essential³</h3><p>Óleo 31, Anti-Stress y Guduchi en roll-on, para llevar en la cartera.</p><a data-wa="Hola Ana, quiero información del Essential³ Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
     </div>
 
-    <div class="testis">
-      <div class="testi"><div class="stars">★★★★★</div><blockquote>“Me encanta este aceite, es uno de mis favoritos. Lo recomiendo.”</blockquote><cite>Compradora del trío Óleo 31, Guduchi y Anti-Stress (traducido del inglés)</cite></div>
-      <div class="testi"><div class="stars">★★★★★</div><blockquote>“Resultados reales! Gran variedad de productos y muy deliciosos los aromas.”</blockquote><cite>Jessica Reyes · <a href="https://productos-just.ueniweb.com/" target="_blank" rel="noopener">ver fuente</a></cite></div>
-    </div>
+    <h3 style="font-size:22px;margin:6px 0 14px">🎥 Historias reales</h3>
+    <div class="vids" style="margin-bottom:30px" data-vids='[["exO7ET4XoXY", "Clientes cuentan su experiencia con Essential³ · Just Perú Oficial"], ["FElkCuXpA8Y", "Testimonio sobre los aceites esenciales Just"]]'></div>
 
     <div class="cta"><p>¿No sabes qué aroma va contigo? Cuéntame cómo te sientes y te recomiendo el tuyo.</p><a class="btn" data-wa="Hola Ana, quiero saber qué aceite de aromaterapia me conviene 🌿" href="#">Escríbeme</a></div>
   </div>
@@ -320,14 +340,9 @@ footer p{margin:.4em 0}
       <article class="prod" data-id="balsamo" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/balsamo.webp" alt="Bálsamo con Árnica y Hamamelis Just" loading="lazy"><div class="info"><h3>Bálsamo con Árnica y Hamamelis</h3><p>Loción corporal para masajes que alivia la sensación de piernas cansadas.</p><a data-wa="Hola Ana, quiero información del Bálsamo Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
     </div>
 
-    <div class="testis">
-      <div class="testi"><div class="stars">★★★★★</div><blockquote>“Me calma los dolores de cabeza y las tensiones.”</blockquote><cite>Comprador del Óleo 31</cite></div>
-      <div class="testi"><div class="stars">★★★★★</div><blockquote>“Lo vengo utilizando con mi familia hace años y es excelente en cualquier tipo de dolor muscular.”</blockquote><cite>Comprador del Óleo 31</cite></div>
-      <div class="testi"><div class="stars">★★★★★</div><blockquote>“Excelente, útil para calmar dolores y como aromatizante.”</blockquote><cite>Comprador del Óleo 31</cite></div>
-      <div class="testi"><div class="stars">★★★★★</div><blockquote>“Hace dos años me compré el Óleo 31 y todavía me queda. Son de excelente calidad.”</blockquote><cite>Miry · comentario en Zancada · <a href="https://zancada.com/swiss-just-bienestar-natural/" target="_blank" rel="noopener">ver fuente</a></cite></div>
-      <div class="testi"><div class="stars">★★★★★</div><blockquote>“Muy buen producto, especial para dolores musculares.”</blockquote><cite>Usuario de Crema de Enebro · abillion · <a href="https://www.abillion.com/products/crema-corporal-de-enebro-10065382" target="_blank" rel="noopener">ver fuente</a></cite></div>
-      <div class="testi"><div class="stars">★★★★★</div><blockquote>“Una pequeña cantidad de esta crema me alivió la molestia.”</blockquote><cite>Compradora de Crema de Enebro (traducido del inglés)</cite></div>
-    </div>
+    <h3 style="font-size:22px;margin:6px 0 14px">🎥 Historias reales</h3>
+    <div class="vids" style="margin-bottom:30px" data-vids='[["2YhigPrWstY", "Tomasa y el Óleo 31 para sus dolores de cabeza"], ["1WzsOkVf5Ws", "Gala y su dolor lumbar: Crema de Enebro y Óleo 31"], ["ftNmN3wyqmg", "Testimonio usando Óleo 31 y Crema de Enebro"]]'></div>
+    <div class="testis"><div class="testi"><div class="stars">★★★★★</div><blockquote>“Hace dos años me compré el Óleo 31 y todavía me queda. Son de excelente calidad.”</blockquote><cite>Miry · comentario en Zancada · <a href="https://zancada.com/swiss-just-bienestar-natural/" target="_blank" rel="noopener">ver fuente</a></cite></div></div>
 
     <a class="video" href="https://www.youtube.com/watch?v=g1mkTTekReM" target="_blank" rel="noopener">
       <span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
@@ -360,9 +375,8 @@ footer p{margin:.4em 0}
       <article class="prod" data-id="cremalavanda" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/cremalavanda.webp" alt="Crema de Lavanda Just" loading="lazy"><div class="info"><h3>Crema de Lavanda</h3><p>Relaja y suaviza la piel. Perfecta para un masaje antes de dormir.</p><a data-wa="Hola Ana, quiero información de la Crema de Lavanda Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
       <article class="prod" data-id="lavanda" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/lavanda.webp" alt="Aceite esencial de Lavanda Just" loading="lazy"><div class="info"><h3>Aceite esencial de Lavanda</h3><p>Una gota en la almohada para crear un ambiente sereno.</p><a data-wa="Hola Ana, quiero información del Aceite de Lavanda Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
     </div>
-    <div class="testis">
-      <div class="testi"><div class="stars">★★★★★</div><blockquote>“Muy buen producto natural para los músculos adoloridos.”</blockquote><cite>Comprador de Crema de Lavanda (traducido del inglés)</cite></div>
-    </div>
+    <h3 style="font-size:22px;margin:6px 0 14px">🎥 Historias reales</h3>
+    <div class="vids" style="margin-bottom:30px" data-vids='[["icCQ3__H9OM", "Gardenia Nights, una alternativa natural para el buen dormir"]]'></div>
     <div class="cta"><p>Te armo un ritual de noche a tu medida. Escríbeme y lo conversamos.</p><a class="btn" data-wa="Hola Ana, quiero dormir mejor y manejar el estrés, ¿qué me recomiendas?" href="#">Escríbeme</a></div>
   </div>
 </section>
@@ -387,10 +401,8 @@ footer p{margin:.4em 0}
       <article class="prod" data-id="eucalipto" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/eucalipto.webp" alt="Aceite esencial de Eucalipto Just" loading="lazy"><div class="info"><h3>Aceite esencial de Eucalipto</h3><p>Aroma fresco para inhalaciones y para despejar en épocas de frío.</p><a data-wa="Hola Ana, quiero información del Aceite de Eucalipto Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
       <article class="prod" data-id="tomillo" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/tomillo.webp" alt="Crema de Tomillo Just" loading="lazy"><div class="info"><h3>Crema de Tomillo</h3><p>El clásico de la familia para frotar en pecho y espalda.</p><a data-wa="Hola Ana, quiero información de la Crema de Tomillo Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
     </div>
-    <div class="testis">
-      <div class="testi"><div class="stars">★★★★★</div><blockquote>“Muy natural y útil. Nos encanta esta crema.”</blockquote><cite>Cliente · Crema de Tomillo (traducido del inglés)</cite></div>
-      <div class="testi"><div class="stars">★★★★★</div><blockquote>“La mejor pomada.”</blockquote><cite>Comprador verificado · Crema de Tomillo</cite></div>
-    </div>
+    <h3 style="font-size:22px;margin:6px 0 14px">🎥 Historias reales</h3>
+    <div class="vids" style="margin-bottom:30px" data-vids='[["xNDdC3BKw_Y", "Testimonio de una familia con la Crema de Tomillo"], ["GNMvWf2xIUo", "Eucasol: respira libremente · Gaby Miranda"]]'></div>
     <div class="cta"><p>Prepara tu botiquín natural para la familia. Te ayudo a armarlo.</p><a class="btn" data-wa="Hola Ana, quiero productos Just para respirar mejor en casa" href="#">Escríbeme</a></div>
   </div>
 </section>
@@ -416,9 +428,8 @@ footer p{margin:.4em 0}
       <article class="prod" data-id="suncare" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/suncare.webp" alt="Sun Care FPS 30 Just" loading="lazy"><div class="info"><h3>Sun Care FPS 30</h3><p>Protector solar facial con Edelweiss, para todos los días.</p><a data-wa="Hola Ana, quiero información del Sun Care FPS 30 Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
       <article class="prod" data-id="teatree" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/teatree.webp" alt="Aceite de Tea Tree, Manuka y Rosalina Just" loading="lazy"><div class="info"><h3>Tea Tree, Manuka y Rosalina</h3><p>Purifica y ayuda a cuidar la piel con imperfecciones.</p><a data-wa="Hola Ana, quiero información del Tea Tree Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
     </div>
-    <div class="testis">
-      <div class="testi"><div class="stars">★★★★★</div><blockquote>“¡Lo mejor! Me encanta la marca Just. Calidad increíble.”</blockquote><cite>Cliente · Crema de Lavanda Just (traducido del inglés)</cite></div>
-    </div>
+    <h3 style="font-size:22px;margin:6px 0 14px">🎥 Historias reales</h3>
+    <div class="vids" style="margin-bottom:30px" data-vids='[["R3lMJJqv6h8", "Rutina facial Vital Just y testimonios"], ["8ikgwYEN4yM", "Piel radiante con Vital Just · consultora en Perú"]]'></div>
     <div class="cta"><p>Dime tu tipo de piel y te propongo una rutina simple y efectiva.</p><a class="btn" data-wa="Hola Ana, quiero una rutina de cuidado de piel con Just" href="#">Escríbeme</a></div>
   </div>
 </section>
@@ -468,7 +479,7 @@ footer p{margin:.4em 0}
   <div class="wrap">
     <p><b>Ana Pajares</b> · Consultora independiente de Just · WhatsApp +51 985 258 370</p>
     <p>Esta es una página personal de consultora, no es la página oficial de Just. Las imágenes de producto son de justperu.com.</p>
-    <p>Los productos Just son cosméticos y de aromaterapia: no diagnostican, tratan ni curan enfermedades y no reemplazan la consulta médica. Si tienes una condición de salud, estás embarazada o se trata de niños pequeños, consulta antes con tu médico. Los testimonios son opiniones y videos públicos de usuarios y consultoras; los resultados pueden variar. Los videos pertenecen a sus autores en YouTube.</p>
+    <p>Los productos Just son cosméticos y de aromaterapia: no diagnostican, tratan ni curan enfermedades y no reemplazan la consulta médica. Si tienes una condición de salud, estás embarazada o se trata de niños pequeños, consulta antes con tu médico. Los testimonios son videos y comentarios públicos de usuarios y consultoras; los resultados pueden variar. Los videos pertenecen a sus autores en YouTube.</p>
   </div>
 </footer>
 

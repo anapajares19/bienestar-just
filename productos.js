@@ -7,11 +7,7 @@ window.PRODUCTOS = {
     beneficios: ["Refresca y revitaliza.", "Afloja, con un masaje, la tensión acumulada en frente, sienes y nuca que puede provocar dolores de cabeza.", "Ayuda a minimizar la tensión en músculos y articulaciones que restringe el movimiento.", "Aumenta la sensación de bienestar físico."],
     uso: ["Cabeza: 1 gota en sienes, frente y nuca, con un masaje suave.", "Músculos: unas gotas en la zona tensa y masajear.", "Inhalación: 1 a 3 gotas en un pañuelo o en las palmas y respirar profundo."],
     ingredientes: "31 aceites esenciales, entre ellos lavanda, menta silvestre, eucalipto, romero, salvia, tomillo, manzanilla y melisa.",
-    testimonios: [
-      ["Me calma los dolores de cabeza y las tensiones.", "Comprador del Óleo 31"],
-      ["Lo vengo utilizando con mi familia hace años y es excelente en cualquier tipo de dolor muscular.", "Comprador del Óleo 31"],
-      ["Hace dos años me compré el Óleo 31 y todavía me queda. Son de excelente calidad.", "Miry, comentario en Zancada"]
-    ],
+    testimonios: [["Hace dos años me compré el Óleo 31 y todavía me queda. Son de excelente calidad.", "Miry, comentario en Zancada"]],
     historias: [["2YhigPrWstY", "Tomasa cuenta cómo el Óleo 31 la ayuda con sus dolores de cabeza"], ["ftNmN3wyqmg", "Testimonio usando Óleo 31 y Crema de Enebro"]],
     videos: [["I9l35yfZd3w", "Óleo 31 · Swiss Just con Claudia Franco"], ["R6vC5p7MOeI", "Usos del Óleo 31"], ["ubqVmnCav0M", "Testimonio de Julissa sobre los productos Just"]]
   },
@@ -30,10 +26,7 @@ window.PRODUCTOS = {
     beneficios: ["Relaja los músculos y revitaliza a través del masaje.", "Su calor localizado afloja tensiones por estrés, mala postura o deporte.", "Ideal antes y después de la actividad física.", "Favorable para personas con rigidez muscular."],
     uso: ["Aplicar en cuello, espalda o piernas con un masaje firme.", "Para un efecto más profundo, tomar antes un baño tibio con Esencia para Baño de Enebro."],
     ingredientes: "Aceite esencial de enebro, ciprés, eucalipto y pino, y aceite de soja.",
-    testimonios: [
-      ["Muy buen producto, especial para dolores musculares.", "Usuario en abillion"],
-      ["Una pequeña cantidad de esta crema me alivió la molestia.", "Compradora (traducido del inglés)"]
-    ],
+    testimonios: [],
     historias: [["2N4IAhNgQ1k", "Jorge Bardales, campeón peruano de jiu-jitsu, usa la Crema de Enebro"], ["1WzsOkVf5Ws", "Gala cuenta cómo la ayudaron la Crema de Enebro y el Óleo 31 con su dolor lumbar"]],
     videos: [["MEz5AEZPeHs", "Enebro · Swiss Just con Claudia Franco"], ["fQwWGdzmJ-0", "Usos y beneficios de la Crema de Enebro"]]
   },
@@ -68,7 +61,7 @@ window.PRODUCTOS = {
     nombre: "Anti-Stress", img: "img/antistress.webp",
     intro: "Una combinación de 15 aceites esenciales que te ayuda a enfrentar con más serenidad el estrés y los desafíos del día a día.",
     beneficios: ["Brinda una sensación relajante, reconfortante y positiva en momentos de alto estrés.", "Despeja la mente para afrontar la exigencia de forma armónica.", "Ideal para épocas de exámenes, trabajo intenso o maternidad."],
-    uso: ["Aplicar en muñecas, sienes y nuca con un masaje suave.", "Usarlo antes de dormir para promover la relajación.", "No usar al mismo tiempo que el Revitalizador Guduchi: sus efectos se anulan."],
+    uso: ["Aplicar en muñecas, sienes y nuca con un masaje suave.", "Usarlo antes de dormir para promover la relajación.", "Combínalo con el Revitalizador Guduchi en distintos momentos del día: Guduchi para activarte y Anti-Stress para calmarte."],
     ingredientes: "Lavanda, manzanilla, melisa, geranio, rosa damascena, menta piperita, romero y lúpulo, entre otros.",
     testimonios: [],
     videos: [["SBbglXHUiVM", "Anti-Stress · Just México Oficial"], ["FLP1FRxZQZc", "Anti Stress · Swiss Just con Claudia Franco"]]
@@ -97,7 +90,7 @@ window.PRODUCTOS = {
     beneficios: ["Energía para empezar el día.", "Alivio de tensiones durante la jornada.", "Calma para desconectarte antes de dormir.", "Formato práctico para llevar en la cartera."],
     uso: ["Mañana: Guduchi en muñecas y nuca.", "Durante el día: Óleo 31 en sienes y nuca.", "Noche: Anti-Stress antes de dormir."],
     ingredientes: "Revitalizador Guduchi, Óleo 31 y Anti-Stress en formato roll-on.",
-    testimonios: [["Me encanta este aceite, es uno de mis favoritos. Lo recomiendo.", "Compradora del trío (traducido del inglés)"]],
+    testimonios: [],
     historias: [["exO7ET4XoXY", "Testimonios de clientes que usan Essential³ · Just Perú Oficial"]],
     videos: [["_DXgdupgQO8", "Kit Essential³: el secreto de un gran día"], ["1CnOugTya9g", "Essential³: ritual diario"]]
   },
@@ -126,10 +119,7 @@ window.PRODUCTOS = {
     beneficios: ["Cuida y mejora la apariencia de la piel.", "Refresca y reconforta la piel, por ejemplo después del sol.", "Con el masaje, afloja las tensiones del día y equilibra las emociones.", "Puede usarse en niños y adultos."],
     uso: ["Masajear en pies, manos o cuello antes de dormir.", "Aplicar sobre la piel que necesite alivio."],
     ingredientes: "Aceite esencial de lavanda, extracto de hamamelis, aloe vera, glicerina y bisabolol.",
-    testimonios: [
-      ["Muy buen producto natural para los músculos adoloridos.", "Comprador (traducido del inglés)"],
-      ["¡Lo mejor! Me encanta la marca Just. Calidad increíble.", "Clienta (traducido del inglés)"]
-    ],
+    testimonios: [],
     videos: [["XzR0uB28zQI", "Crema de Lavanda · Just México Oficial"], ["9ZavBcsUhE0", "Cómo usar la Crema de Lavanda Just"]]
   },
   eucasol: {
@@ -157,10 +147,7 @@ window.PRODUCTOS = {
     beneficios: ["Un masaje en pecho, espalda y planta de los pies da una sensación de bienestar y comodidad en invierno.", "Ideal para niños y adultos.", "Complementa la Esencia para Baño de Tomillo."],
     uso: ["Aplicar una pequeña cantidad en pecho, garganta, espalda y plantas de los pies, y masajear."],
     ingredientes: "Aceite esencial de tomillo, alcanfor, eucalipto, limón, manzanilla, pino, romero y aceite de soja.",
-    testimonios: [
-      ["Muy natural y útil. Nos encanta esta crema.", "Clienta (traducido del inglés)"],
-      ["La mejor pomada.", "Comprador verificado"]
-    ],
+    testimonios: [],
     historias: [["xNDdC3BKw_Y", "Testimonio de una familia con la Crema de Tomillo"]],
     videos: [["Nm-Tr9-uvGg", "Tomillo · Swiss Just con Claudia Franco"], ["xQiwB-5G3YQ", "Para qué sirve la Crema de Tomillo"]]
   },
