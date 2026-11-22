@@ -42,19 +42,19 @@ h1,h2,h3{font-family:"Fraunces",Georgia,serif;color:var(--verde);line-height:1.2
 .chip{background:#fff;border:1px solid var(--borde);border-radius:999px;padding:6px 14px;font-size:14px;color:var(--verde)}
 .hero-img{background:#fff;border-radius:28px;padding:18px;box-shadow:0 10px 30px rgba(47,81,48,.10)}
 .stat{display:flex;gap:18px;margin-top:22px;flex-wrap:wrap}
-.stat div{background:#fff;border-radius:16px;padding:12px 16px;border:1px solid var(--borde)}
+.stat div{flex:1 1 130px;background:#fff;border-radius:16px;padding:12px 16px;border:1px solid var(--borde)}
 .stat b{font-family:"Fraunces",serif;font-size:24px;color:var(--verde);display:block}
 .stat span{font-size:13px;color:var(--suave)}
 
 /* Nav temas */
-.temas{position:sticky;top:0;z-index:10;background:rgba(251,248,242,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--borde)}
+.temas{position:sticky;top:75px;z-index:10;background:rgba(251,248,242,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--borde)}
 .temas .wrap{display:flex;gap:8px;overflow-x:auto;padding-top:12px;padding-bottom:12px;scrollbar-width:none}
 .temas .wrap::-webkit-scrollbar{display:none}
 .temas a{flex:none;text-decoration:none;background:#fff;border:1.5px solid var(--borde);color:var(--verde);padding:9px 16px;border-radius:999px;font-weight:700;font-size:15px;white-space:nowrap}
 .temas a.on,.temas a:hover{background:var(--verde);border-color:var(--verde);color:#fff}
 
 /* Secciones */
-section.tema{padding:64px 0;border-bottom:1px solid var(--borde)}
+section.tema{scroll-margin-top:130px;padding:64px 0;border-bottom:1px solid var(--borde)}
 section.tema:nth-of-type(even){background:#fff}
 .kicker{display:inline-block;background:var(--salvia2);color:var(--verde);font-weight:700;font-size:13px;letter-spacing:.04em;text-transform:uppercase;padding:5px 12px;border-radius:999px;margin-bottom:12px}
 .intro{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start;margin-bottom:34px}
@@ -114,9 +114,70 @@ footer p{margin:.4em 0}
 
 .flota{position:fixed;right:18px;bottom:18px;z-index:20;box-shadow:0 8px 24px rgba(0,0,0,.18)}
 
+
+/* Menú lateral */
+.top{position:sticky;top:0;z-index:30}
+.menu-btn{flex:none;width:46px;height:46px;border-radius:14px;border:1.5px solid var(--borde);background:#fff;display:grid;place-items:center;cursor:pointer}
+.menu-btn svg{width:22px;height:22px;stroke:var(--verde);stroke-width:2.2;fill:none;stroke-linecap:round}
+.brand{flex:1;min-width:0}
+.brand small{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.velo{position:fixed;inset:0;background:rgba(30,45,30,.45);z-index:40;opacity:0;pointer-events:none;transition:opacity .25s}
+.velo.on{opacity:1;pointer-events:auto}
+.cajon{position:fixed;top:0;left:0;bottom:0;width:min(84vw,320px);background:var(--crema);z-index:41;transform:translateX(-105%);transition:transform .28s ease;display:flex;flex-direction:column;box-shadow:8px 0 30px rgba(0,0,0,.15)}
+.cajon.on{transform:none}
+.cajon-top{display:flex;align-items:center;justify-content:space-between;padding:18px 18px 10px}
+.cajon-top b{font-family:"Fraunces",serif;color:var(--verde);font-size:20px}
+.cerrar{width:40px;height:40px;border-radius:50%;border:0;background:var(--salvia);font-size:24px;line-height:1;color:var(--verde);cursor:pointer}
+.cajon nav{padding:6px 12px;overflow-y:auto;flex:1}
+.cajon nav p{margin:14px 10px 6px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--suave)}
+.cajon nav a{display:flex;align-items:center;gap:12px;padding:13px 12px;border-radius:14px;text-decoration:none;color:var(--texto);font-weight:700;font-size:16px}
+.cajon nav a:hover,.cajon nav a:focus{background:var(--salvia)}
+.cajon .btn{margin:12px 18px 22px;justify-content:center}
+@media (max-width:820px){.temas{display:none}}
+
+/* Fichas */
+.prod{cursor:pointer}
+.prod .info a,.prod .vermas{font-weight:700;font-size:15px}
+.prod .info{position:relative}
+.vermas{align-self:flex-start;background:var(--salvia);color:var(--verde);border:0;border-radius:999px;padding:8px 16px;cursor:pointer;font-family:inherit}
+.prod .info a{order:3}
+.ficha-velo{position:fixed;inset:0;background:rgba(30,45,30,.55);z-index:50;display:none;align-items:flex-end;justify-content:center}
+.ficha-velo.on{display:flex}
+.ficha{background:var(--crema);width:min(760px,100%);max-height:92vh;overflow-y:auto;border-radius:26px 26px 0 0;position:relative;animation:sube .25s ease}
+@keyframes sube{from{transform:translateY(40px);opacity:.4}to{transform:none;opacity:1}}
+@media (min-width:821px){.ficha-velo{align-items:center}.ficha{border-radius:26px;max-height:88vh}}
+.ficha .cerrar{position:sticky;top:12px;float:right;margin:12px 12px 0 0;z-index:2}
+.ficha-head{display:grid;grid-template-columns:200px 1fr;gap:20px;align-items:center;padding:22px 24px 8px}
+.ficha-head img{background:#fff;border-radius:18px;border:1px solid var(--borde)}
+.ficha-head h2{font-size:28px;margin-bottom:.3em}
+.ficha-head p{margin:0;color:var(--suave)}
+.ficha-body{padding:6px 24px 26px}
+.ficha h4{font-family:"Fraunces",serif;color:var(--verde);font-size:20px;margin:22px 0 10px}
+.ficha ul{margin:0;padding-left:20px}
+.ficha li{margin:5px 0}
+.ficha .ingr{background:var(--celeste);border-radius:14px;padding:12px 16px;font-size:15px;color:var(--suave)}
+.vids{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.vid{border-radius:16px;overflow:hidden;background:#000;position:relative;aspect-ratio:16/9;cursor:pointer;border:0;padding:0;display:block;width:100%}
+.vid img{width:100%;height:100%;object-fit:cover;opacity:.88}
+.vid .pl{position:absolute;inset:0;display:grid;place-items:center}
+.vid .pl span{width:58px;height:58px;border-radius:50%;background:rgba(138,46,40,.92);display:grid;place-items:center}
+.vid .pl svg{width:24px;height:24px;fill:#fff;margin-left:4px}
+.vid iframe{width:100%;height:100%;border:0;display:block}
+.vcap{font-size:14px;color:var(--suave);margin:6px 2px 0}
+.vcap a{color:var(--suave)}
+.ficha .testi{background:#fff;margin-bottom:10px}
+.ficha .cta{margin-top:24px}
+@media (max-width:600px){.ficha-head{grid-template-columns:1fr;text-align:center}.ficha-head img{max-width:240px;margin:0 auto}}
+
+/* Historias */
+.historias{scroll-margin-top:80px;padding:56px 0;background:#fff;border-bottom:1px solid var(--borde)}
+.historias .vids{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+
 @media (max-width:820px){
   .hero .wrap,.intro,.sobre .wrap{grid-template-columns:1fr}
   .hero{padding-top:30px}
+  .hero-img{max-width:300px;margin:0 auto;order:-1}
+  .hero .wrap{gap:24px}
   .sobre img{margin:0 auto}
   .top .btn span{display:none}
   section.tema{padding:46px 0}
@@ -127,6 +188,7 @@ footer p{margin:.4em 0}
 
 <header class="top">
   <div class="wrap">
+    <button class="menu-btn" id="abrirMenu" aria-label="Abrir menú"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     <div class="brand">
       <img src="img/ana.jpg" alt="Ana Pajares">
       <div><b>Ana Pajares</b><small>Consultora independiente Just · Perú</small></div>
@@ -136,6 +198,24 @@ footer p{margin:.4em 0}
       <span>Escríbeme</span></a>
   </div>
 </header>
+
+<div class="velo" id="velo"></div>
+<aside class="cajon" id="cajon" aria-label="Menú">
+  <div class="cajon-top"><b>Menú</b><button class="cerrar" id="cerrarMenu" aria-label="Cerrar menú">×</button></div>
+  <nav>
+    <p>Temas</p>
+    <a href="#aromaterapia">🌿 Aromaterapia</a>
+    <a href="#dolores">💆 Dolores y tensiones</a>
+    <a href="#descanso">🌙 Descanso y estrés</a>
+    <a href="#respira">🍃 Respira mejor</a>
+    <a href="#piel">✨ Cuidado de la piel</a>
+    <p>Más</p>
+    <a href="#historias">🎥 Historias reales</a>
+    <a href="#unete">💼 Únete a mi equipo</a>
+    <a href="#anfitriona">🏡 Sé Anfitriona</a>
+  </nav>
+  <a class="btn" data-wa="Hola Ana, vi tu página y quiero información sobre los productos Just 🌿" href="#">Escríbeme por WhatsApp</a>
+</aside>
 
 <section class="hero">
   <div class="wrap">
@@ -151,6 +231,15 @@ footer p{margin:.4em 0}
       </div>
     </div>
     <div class="hero-img"><img src="img/oleo31.webp" alt="Óleo 31 de Just, mezcla de 31 aceites esenciales"></div>
+  </div>
+</section>
+
+<section class="historias" id="historias">
+  <div class="wrap">
+    <span class="kicker">Historias reales</span>
+    <h2 style="font-size:clamp(28px,4vw,38px)">Personas que ya viven el bienestar Just</h2>
+    <p class="pregunta" style="font-size:19px;color:var(--suave);max-width:40em">Mira cómo lo usan y lo que cuentan quienes ya probaron los productos. Toca un video para verlo aquí mismo.</p>
+    <div class="vids" data-vids='[["2N4IAhNgQ1k","Jorge Bardales, campeón peruano de jiu-jitsu, y la Crema de Enebro"],["exO7ET4XoXY","Clientes cuentan su experiencia con Essential³ · Just Perú Oficial"],["2YhigPrWstY","Tomasa y el Óleo 31 para sus dolores de cabeza"],["1WzsOkVf5Ws","Gala y su dolor lumbar: Crema de Enebro y Óleo 31"]]'></div>
   </div>
 </section>
 
@@ -190,15 +279,15 @@ footer p{margin:.4em 0}
     </div>
 
     <div class="productos">
-      <article class="prod"><img src="img/lavanda.webp" alt="Aceite esencial de Lavanda Just" loading="lazy"><div class="info"><h3>Aceite esencial de Lavanda</h3><p>El más versátil: calma la mente, acompaña el sueño y reconforta la piel.</p><a data-wa="Hola Ana, quiero información del Aceite de Lavanda Just" href="#">Consultar →</a></div></article>
-      <article class="prod"><img src="img/antistress.webp" alt="Anti-Stress Just" loading="lazy"><div class="info"><h3>Anti-Stress</h3><p>Mezcla para los días intensos. Te ayuda a bajar revoluciones y recuperar la calma.</p><a data-wa="Hola Ana, quiero información del Anti-Stress Just" href="#">Consultar →</a></div></article>
-      <article class="prod"><img src="img/harmony.webp" alt="Harmony+ Just" loading="lazy"><div class="info"><h3>Harmony+</h3><p>Aroma cítrico que equilibra y levanta el ánimo. Ideal para empezar el día.</p><a data-wa="Hola Ana, quiero información del Harmony+ Just" href="#">Consultar →</a></div></article>
-      <article class="prod"><img src="img/guduchi.webp" alt="Revitalizador Guduchi Just" loading="lazy"><div class="info"><h3>Revitalizador Guduchi</h3><p>Para cuando te falta energía: refresca y revitaliza cuerpo y mente.</p><a data-wa="Hola Ana, quiero información del Revitalizador Guduchi Just" href="#">Consultar →</a></div></article>
-      <article class="prod"><img src="img/essential3.webp" alt="Essential³ Just" loading="lazy"><div class="info"><h3>Essential³</h3><p>Óleo 31, Anti-Stress y Guduchi en roll-on, para llevar en la cartera.</p><a data-wa="Hola Ana, quiero información del Essential³ Just" href="#">Consultar →</a></div></article>
+      <article class="prod" data-id="lavanda" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/lavanda.webp" alt="Aceite esencial de Lavanda Just" loading="lazy"><div class="info"><h3>Aceite esencial de Lavanda</h3><p>El más versátil: calma la mente, acompaña el sueño y reconforta la piel.</p><a data-wa="Hola Ana, quiero información del Aceite de Lavanda Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
+      <article class="prod" data-id="antistress" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/antistress.webp" alt="Anti-Stress Just" loading="lazy"><div class="info"><h3>Anti-Stress</h3><p>Mezcla para los días intensos. Te ayuda a bajar revoluciones y recuperar la calma.</p><a data-wa="Hola Ana, quiero información del Anti-Stress Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
+      <article class="prod" data-id="harmony" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/harmony.webp" alt="Harmony+ Just" loading="lazy"><div class="info"><h3>Harmony+</h3><p>Aroma cítrico que equilibra y levanta el ánimo. Ideal para empezar el día.</p><a data-wa="Hola Ana, quiero información del Harmony+ Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
+      <article class="prod" data-id="guduchi" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/guduchi.webp" alt="Revitalizador Guduchi Just" loading="lazy"><div class="info"><h3>Revitalizador Guduchi</h3><p>Para cuando te falta energía: refresca y revitaliza cuerpo y mente.</p><a data-wa="Hola Ana, quiero información del Revitalizador Guduchi Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
+      <article class="prod" data-id="essential3" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/essential3.webp" alt="Essential³ Just" loading="lazy"><div class="info"><h3>Essential³</h3><p>Óleo 31, Anti-Stress y Guduchi en roll-on, para llevar en la cartera.</p><a data-wa="Hola Ana, quiero información del Essential³ Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
     </div>
 
     <div class="testis">
-      <div class="testi"><div class="stars">★★★★★</div><blockquote>“Me encanta este aceite, es uno de mis favoritos. Lo recomiendo.”</blockquote><cite>Cliente en Amazon EE. UU. · Trío Óleo 31, Guduchi y Anti-Stress (traducido del inglés) · <a href="https://www.amazon.com/Just-Swiss-Essential-3/dp/B07GFR76K7" target="_blank" rel="noopener">ver fuente</a></cite></div>
+      <div class="testi"><div class="stars">★★★★★</div><blockquote>“Me encanta este aceite, es uno de mis favoritos. Lo recomiendo.”</blockquote><cite>Compradora del trío Óleo 31, Guduchi y Anti-Stress (traducido del inglés)</cite></div>
       <div class="testi"><div class="stars">★★★★★</div><blockquote>“Resultados reales! Gran variedad de productos y muy deliciosos los aromas.”</blockquote><cite>Jessica Reyes · <a href="https://productos-just.ueniweb.com/" target="_blank" rel="noopener">ver fuente</a></cite></div>
     </div>
 
@@ -224,20 +313,20 @@ footer p{margin:.4em 0}
     </div>
 
     <div class="productos">
-      <article class="prod"><img src="img/oleo31.webp" alt="Óleo 31 Just" loading="lazy"><div class="info"><h3>Óleo 31</h3><p>31 aceites esenciales en una sola fórmula. Refresca y afloja la tensión que causa dolores de cabeza y musculares.</p><a data-wa="Hola Ana, quiero información del Óleo 31 Just" href="#">Consultar →</a></div></article>
-      <article class="prod"><img src="img/crema31.webp" alt="Crema Herbal 31 Just" loading="lazy"><div class="info"><h3>Crema Herbal 31</h3><p>Los beneficios del Óleo 31 en crema, ideal para masajes en zonas amplias.</p><a data-wa="Hola Ana, quiero información de la Crema Herbal 31 Just" href="#">Consultar →</a></div></article>
-      <article class="prod"><img src="img/enebro.webp" alt="Crema de Enebro Just" loading="lazy"><div class="info"><h3>Crema de Enebro</h3><p>Efecto calor que relaja músculos tensos por estrés, mala postura o deporte.</p><a data-wa="Hola Ana, quiero información de la Crema de Enebro Just" href="#">Consultar →</a></div></article>
-      <article class="prod"><img src="img/arnica.webp" alt="Gel Cremoso de Árnica Just" loading="lazy"><div class="info"><h3>Gel Cremoso de Árnica</h3><p>Frescura para golpes y zonas sensibles después del ejercicio.</p><a data-wa="Hola Ana, quiero información del Gel de Árnica Just" href="#">Consultar →</a></div></article>
-      <article class="prod"><img src="img/balsamo.webp" alt="Bálsamo con Árnica y Hamamelis Just" loading="lazy"><div class="info"><h3>Bálsamo con Árnica y Hamamelis</h3><p>Loción corporal para masajes que alivia la sensación de piernas cansadas.</p><a data-wa="Hola Ana, quiero información del Bálsamo Just" href="#">Consultar →</a></div></article>
+      <article class="prod" data-id="oleo31" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/oleo31.webp" alt="Óleo 31 Just" loading="lazy"><div class="info"><h3>Óleo 31</h3><p>31 aceites esenciales en una sola fórmula. Refresca y afloja la tensión que causa dolores de cabeza y musculares.</p><a data-wa="Hola Ana, quiero información del Óleo 31 Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
+      <article class="prod" data-id="crema31" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/crema31.webp" alt="Crema Herbal 31 Just" loading="lazy"><div class="info"><h3>Crema Herbal 31</h3><p>Los beneficios del Óleo 31 en crema, ideal para masajes en zonas amplias.</p><a data-wa="Hola Ana, quiero información de la Crema Herbal 31 Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
+      <article class="prod" data-id="enebro" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/enebro.webp" alt="Crema de Enebro Just" loading="lazy"><div class="info"><h3>Crema de Enebro</h3><p>Efecto calor que relaja músculos tensos por estrés, mala postura o deporte.</p><a data-wa="Hola Ana, quiero información de la Crema de Enebro Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
+      <article class="prod" data-id="arnica" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/arnica.webp" alt="Gel Cremoso de Árnica Just" loading="lazy"><div class="info"><h3>Gel Cremoso de Árnica</h3><p>Frescura para golpes y zonas sensibles después del ejercicio.</p><a data-wa="Hola Ana, quiero información del Gel de Árnica Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
+      <article class="prod" data-id="balsamo" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/balsamo.webp" alt="Bálsamo con Árnica y Hamamelis Just" loading="lazy"><div class="info"><h3>Bálsamo con Árnica y Hamamelis</h3><p>Loción corporal para masajes que alivia la sensación de piernas cansadas.</p><a data-wa="Hola Ana, quiero información del Bálsamo Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
     </div>
 
     <div class="testis">
-      <div class="testi"><div class="stars">★★★★★</div><blockquote>“Me calma los dolores de cabeza y las tensiones.”</blockquote><cite>Comprador del Óleo 31 · <a href="https://www.mercadolibre.com.ar/swiss-just-oleo-31-50ml-/p/MLA22621363" target="_blank" rel="noopener">ver fuente</a></cite></div>
-      <div class="testi"><div class="stars">★★★★★</div><blockquote>“Lo vengo utilizando con mi familia hace años y es excelente en cualquier tipo de dolor muscular.”</blockquote><cite>Comprador del Óleo 31 · <a href="https://www.mercadolibre.com.ar/swiss-just-oleo-31-50ml-/p/MLA22621363" target="_blank" rel="noopener">ver fuente</a></cite></div>
-      <div class="testi"><div class="stars">★★★★★</div><blockquote>“Excelente, útil para calmar dolores y como aromatizante.”</blockquote><cite>Comprador del Óleo 31 · <a href="https://www.mercadolibre.com.co/oleo-31-50ml-swiss-just-aceite-aromaterapia-bienestar-dolores-musculares-cabeza-relaja-afloja-tensiones/p/MCO22621363" target="_blank" rel="noopener">ver fuente</a></cite></div>
+      <div class="testi"><div class="stars">★★★★★</div><blockquote>“Me calma los dolores de cabeza y las tensiones.”</blockquote><cite>Comprador del Óleo 31</cite></div>
+      <div class="testi"><div class="stars">★★★★★</div><blockquote>“Lo vengo utilizando con mi familia hace años y es excelente en cualquier tipo de dolor muscular.”</blockquote><cite>Comprador del Óleo 31</cite></div>
+      <div class="testi"><div class="stars">★★★★★</div><blockquote>“Excelente, útil para calmar dolores y como aromatizante.”</blockquote><cite>Comprador del Óleo 31</cite></div>
       <div class="testi"><div class="stars">★★★★★</div><blockquote>“Hace dos años me compré el Óleo 31 y todavía me queda. Son de excelente calidad.”</blockquote><cite>Miry · comentario en Zancada · <a href="https://zancada.com/swiss-just-bienestar-natural/" target="_blank" rel="noopener">ver fuente</a></cite></div>
       <div class="testi"><div class="stars">★★★★★</div><blockquote>“Muy buen producto, especial para dolores musculares.”</blockquote><cite>Usuario de Crema de Enebro · abillion · <a href="https://www.abillion.com/products/crema-corporal-de-enebro-10065382" target="_blank" rel="noopener">ver fuente</a></cite></div>
-      <div class="testi"><div class="stars">★★★★★</div><blockquote>“Una pequeña cantidad de esta crema me alivió la molestia.”</blockquote><cite>Compradora de Crema de Enebro (traducido del inglés) · <a href="https://www.desertcart.com.cy/products/24370725" target="_blank" rel="noopener">ver fuente</a></cite></div>
+      <div class="testi"><div class="stars">★★★★★</div><blockquote>“Una pequeña cantidad de esta crema me alivió la molestia.”</blockquote><cite>Compradora de Crema de Enebro (traducido del inglés)</cite></div>
     </div>
 
     <a class="video" href="https://www.youtube.com/watch?v=g1mkTTekReM" target="_blank" rel="noopener">
@@ -266,13 +355,13 @@ footer p{margin:.4em 0}
       </ul>
     </div>
     <div class="productos">
-      <article class="prod"><img src="img/gardenia.webp" alt="Gardenia Nights Just" loading="lazy"><div class="info"><h3>Gardenia Nights</h3><p>Mezcla floral para tu rutina de noche y un descanso más profundo.</p><a data-wa="Hola Ana, quiero información de Gardenia Nights Just" href="#">Consultar →</a></div></article>
-      <article class="prod"><img src="img/melisa.webp" alt="Esencia para baño de Melisa Just" loading="lazy"><div class="info"><h3>Esencia para baño de Melisa</h3><p>Convierte tu baño en un momento de calma para cuerpo y mente.</p><a data-wa="Hola Ana, quiero información de la Esencia de Melisa Just" href="#">Consultar →</a></div></article>
-      <article class="prod"><img src="img/cremalavanda.webp" alt="Crema de Lavanda Just" loading="lazy"><div class="info"><h3>Crema de Lavanda</h3><p>Relaja y suaviza la piel. Perfecta para un masaje antes de dormir.</p><a data-wa="Hola Ana, quiero información de la Crema de Lavanda Just" href="#">Consultar →</a></div></article>
-      <article class="prod"><img src="img/lavanda.webp" alt="Aceite esencial de Lavanda Just" loading="lazy"><div class="info"><h3>Aceite esencial de Lavanda</h3><p>Una gota en la almohada para crear un ambiente sereno.</p><a data-wa="Hola Ana, quiero información del Aceite de Lavanda Just" href="#">Consultar →</a></div></article>
+      <article class="prod" data-id="gardenia" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/gardenia.webp" alt="Gardenia Nights Just" loading="lazy"><div class="info"><h3>Gardenia Nights</h3><p>Mezcla floral para tu rutina de noche y un descanso más profundo.</p><a data-wa="Hola Ana, quiero información de Gardenia Nights Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
+      <article class="prod" data-id="melisa" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/melisa.webp" alt="Esencia para baño de Melisa Just" loading="lazy"><div class="info"><h3>Esencia para baño de Melisa</h3><p>Convierte tu baño en un momento de calma para cuerpo y mente.</p><a data-wa="Hola Ana, quiero información de la Esencia de Melisa Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
+      <article class="prod" data-id="cremalavanda" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/cremalavanda.webp" alt="Crema de Lavanda Just" loading="lazy"><div class="info"><h3>Crema de Lavanda</h3><p>Relaja y suaviza la piel. Perfecta para un masaje antes de dormir.</p><a data-wa="Hola Ana, quiero información de la Crema de Lavanda Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
+      <article class="prod" data-id="lavanda" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/lavanda.webp" alt="Aceite esencial de Lavanda Just" loading="lazy"><div class="info"><h3>Aceite esencial de Lavanda</h3><p>Una gota en la almohada para crear un ambiente sereno.</p><a data-wa="Hola Ana, quiero información del Aceite de Lavanda Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
     </div>
     <div class="testis">
-      <div class="testi"><div class="stars">★★★★★</div><blockquote>“Muy buen producto natural para los músculos adoloridos.”</blockquote><cite>Comprador de Crema de Lavanda (traducido del inglés) · <a href="https://www.desertcart.nz/products/155285491" target="_blank" rel="noopener">ver fuente</a></cite></div>
+      <div class="testi"><div class="stars">★★★★★</div><blockquote>“Muy buen producto natural para los músculos adoloridos.”</blockquote><cite>Comprador de Crema de Lavanda (traducido del inglés)</cite></div>
     </div>
     <div class="cta"><p>Te armo un ritual de noche a tu medida. Escríbeme y lo conversamos.</p><a class="btn" data-wa="Hola Ana, quiero dormir mejor y manejar el estrés, ¿qué me recomiendas?" href="#">Escríbeme</a></div>
   </div>
@@ -294,13 +383,13 @@ footer p{margin:.4em 0}
       </ul>
     </div>
     <div class="productos">
-      <article class="prod"><img src="img/eucasol.webp" alt="Eucasol spray de eucalipto Just" loading="lazy"><div class="info"><h3>Eucasol, spray de eucalipto</h3><p>Mezcla de aceites esenciales que despeja, refresca y purifica el ambiente.</p><a data-wa="Hola Ana, quiero información del Eucasol Just" href="#">Consultar →</a></div></article>
-      <article class="prod"><img src="img/eucalipto.webp" alt="Aceite esencial de Eucalipto Just" loading="lazy"><div class="info"><h3>Aceite esencial de Eucalipto</h3><p>Aroma fresco para inhalaciones y para despejar en épocas de frío.</p><a data-wa="Hola Ana, quiero información del Aceite de Eucalipto Just" href="#">Consultar →</a></div></article>
-      <article class="prod"><img src="img/tomillo.webp" alt="Crema de Tomillo Just" loading="lazy"><div class="info"><h3>Crema de Tomillo</h3><p>El clásico de la familia para frotar en pecho y espalda.</p><a data-wa="Hola Ana, quiero información de la Crema de Tomillo Just" href="#">Consultar →</a></div></article>
+      <article class="prod" data-id="eucasol" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/eucasol.webp" alt="Eucasol spray de eucalipto Just" loading="lazy"><div class="info"><h3>Eucasol, spray de eucalipto</h3><p>Mezcla de aceites esenciales que despeja, refresca y purifica el ambiente.</p><a data-wa="Hola Ana, quiero información del Eucasol Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
+      <article class="prod" data-id="eucalipto" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/eucalipto.webp" alt="Aceite esencial de Eucalipto Just" loading="lazy"><div class="info"><h3>Aceite esencial de Eucalipto</h3><p>Aroma fresco para inhalaciones y para despejar en épocas de frío.</p><a data-wa="Hola Ana, quiero información del Aceite de Eucalipto Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
+      <article class="prod" data-id="tomillo" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/tomillo.webp" alt="Crema de Tomillo Just" loading="lazy"><div class="info"><h3>Crema de Tomillo</h3><p>El clásico de la familia para frotar en pecho y espalda.</p><a data-wa="Hola Ana, quiero información de la Crema de Tomillo Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
     </div>
     <div class="testis">
-      <div class="testi"><div class="stars">★★★★★</div><blockquote>“Muy natural y útil. Nos encanta esta crema.”</blockquote><cite>Cliente · Crema de Tomillo (traducido del inglés) · <a href="https://www.desertcart.sn/products/539453142-thyme-cream-thyme-tomillo-96g-massage-cream-with-camphor-oil" target="_blank" rel="noopener">ver fuente</a></cite></div>
-      <div class="testi"><div class="stars">★★★★★</div><blockquote>“La mejor pomada.”</blockquote><cite>Comprador verificado · Crema de Tomillo, eBay · <a href="https://ebay.com/itm/146373048318" target="_blank" rel="noopener">ver fuente</a></cite></div>
+      <div class="testi"><div class="stars">★★★★★</div><blockquote>“Muy natural y útil. Nos encanta esta crema.”</blockquote><cite>Cliente · Crema de Tomillo (traducido del inglés)</cite></div>
+      <div class="testi"><div class="stars">★★★★★</div><blockquote>“La mejor pomada.”</blockquote><cite>Comprador verificado · Crema de Tomillo</cite></div>
     </div>
     <div class="cta"><p>Prepara tu botiquín natural para la familia. Te ayudo a armarlo.</p><a class="btn" data-wa="Hola Ana, quiero productos Just para respirar mejor en casa" href="#">Escríbeme</a></div>
   </div>
@@ -322,13 +411,13 @@ footer p{margin:.4em 0}
       </ul>
     </div>
     <div class="productos">
-      <article class="prod"><img src="img/serumvital.webp" alt="Sérum Cuidado Intensivo Vital Just" loading="lazy"><div class="info"><h3>Sérum Vital Just</h3><p>Cuidado intensivo que nutre la piel y la ayuda a verse más firme.</p><a data-wa="Hola Ana, quiero información del Sérum Vital Just" href="#">Consultar →</a></div></article>
-      <article class="prod"><img src="img/cremadia.webp" alt="Crema Humectante de Día Vital Just" loading="lazy"><div class="info"><h3>Crema de Día Vital Just</h3><p>Hidratación diaria para una piel suave y luminosa.</p><a data-wa="Hola Ana, quiero información de la Crema de Día Vital Just" href="#">Consultar →</a></div></article>
-      <article class="prod"><img src="img/suncare.webp" alt="Sun Care FPS 30 Just" loading="lazy"><div class="info"><h3>Sun Care FPS 30</h3><p>Protector solar facial con Edelweiss, para todos los días.</p><a data-wa="Hola Ana, quiero información del Sun Care FPS 30 Just" href="#">Consultar →</a></div></article>
-      <article class="prod"><img src="img/teatree.webp" alt="Aceite de Tea Tree, Manuka y Rosalina Just" loading="lazy"><div class="info"><h3>Tea Tree, Manuka y Rosalina</h3><p>Purifica y ayuda a cuidar la piel con imperfecciones.</p><a data-wa="Hola Ana, quiero información del Tea Tree Just" href="#">Consultar →</a></div></article>
+      <article class="prod" data-id="serumvital" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/serumvital.webp" alt="Sérum Cuidado Intensivo Vital Just" loading="lazy"><div class="info"><h3>Sérum Vital Just</h3><p>Cuidado intensivo que nutre la piel y la ayuda a verse más firme.</p><a data-wa="Hola Ana, quiero información del Sérum Vital Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
+      <article class="prod" data-id="cremadia" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/cremadia.webp" alt="Crema Humectante de Día Vital Just" loading="lazy"><div class="info"><h3>Crema de Día Vital Just</h3><p>Hidratación diaria para una piel suave y luminosa.</p><a data-wa="Hola Ana, quiero información de la Crema de Día Vital Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
+      <article class="prod" data-id="suncare" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/suncare.webp" alt="Sun Care FPS 30 Just" loading="lazy"><div class="info"><h3>Sun Care FPS 30</h3><p>Protector solar facial con Edelweiss, para todos los días.</p><a data-wa="Hola Ana, quiero información del Sun Care FPS 30 Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
+      <article class="prod" data-id="teatree" tabindex="0" role="button" aria-label="Ver ficha"><img src="img/teatree.webp" alt="Aceite de Tea Tree, Manuka y Rosalina Just" loading="lazy"><div class="info"><h3>Tea Tree, Manuka y Rosalina</h3><p>Purifica y ayuda a cuidar la piel con imperfecciones.</p><a data-wa="Hola Ana, quiero información del Tea Tree Just" href="#">Consultar →</a><button class="vermas" type="button">Ver más</button></div></article>
     </div>
     <div class="testis">
-      <div class="testi"><div class="stars">★★★★★</div><blockquote>“¡Lo mejor! Me encanta la marca Just. Calidad increíble.”</blockquote><cite>Cliente · Crema de Lavanda Just (traducido del inglés) · <a href="https://www.desertcart.nz/products/155285491" target="_blank" rel="noopener">ver fuente</a></cite></div>
+      <div class="testi"><div class="stars">★★★★★</div><blockquote>“¡Lo mejor! Me encanta la marca Just. Calidad increíble.”</blockquote><cite>Cliente · Crema de Lavanda Just (traducido del inglés)</cite></div>
     </div>
     <div class="cta"><p>Dime tu tipo de piel y te propongo una rutina simple y efectiva.</p><a class="btn" data-wa="Hola Ana, quiero una rutina de cuidado de piel con Just" href="#">Escríbeme</a></div>
   </div>
@@ -363,7 +452,7 @@ footer p{margin:.4em 0}
       <span class="kicker">Tu consultora</span>
       <h2>Hola, soy Ana 🌿</h2>
       <p>Soy consultora independiente de Just en Perú. Me encanta ayudarte a encontrar el producto ideal para lo que necesitas, explicarte cómo usarlo y acompañarte. Escríbeme por WhatsApp y te atiendo personalmente.</p>
-      <h3 style="margin-top:1.2em">Sé Anfitriona de un Encuentro de Bienestar</h3>
+      <h3 id="anfitriona" style="margin-top:1.2em;scroll-margin-top:90px">Sé Anfitriona de un Encuentro de Bienestar</h3>
       <p>Un <b>Encuentro de Bienestar</b> es una reunión con tus amigas, familiares o compañeras de trabajo, en tu casa o de forma virtual. Yo, como tu consultora Just, preparo una demostración sobre el tema que elijas (aromaterapia, relajación, cuidado de la piel y más), para que todas prueben los productos en un ambiente tipo spa. Tú solo invitas y disfrutas.</p>
       <p><b>Como Anfitriona ganas productos Just gratis o con descuento</b>, según las ventas del Encuentro.</p>
       <a class="btn" data-wa="Hola Ana, quiero ser Anfitriona de un Encuentro de Bienestar 🏡" href="#">Quiero ser Anfitriona</a>
@@ -371,11 +460,15 @@ footer p{margin:.4em 0}
   </div>
 </section>
 
+<div class="ficha-velo" id="fichaVelo" role="dialog" aria-modal="true" aria-label="Ficha de producto">
+  <div class="ficha" id="ficha"></div>
+</div>
+
 <footer>
   <div class="wrap">
     <p><b>Ana Pajares</b> · Consultora independiente de Just · WhatsApp +51 985 258 370</p>
     <p>Esta es una página personal de consultora, no es la página oficial de Just. Las imágenes de producto son de justperu.com.</p>
-    <p>Los productos Just son cosméticos y de aromaterapia: no diagnostican, tratan ni curan enfermedades y no reemplazan la consulta médica. Si tienes una condición de salud, estás embarazada o se trata de niños pequeños, consulta antes con tu médico. Los testimonios son opiniones públicas de usuarios, con enlace a su fuente; los resultados pueden variar.</p>
+    <p>Los productos Just son cosméticos y de aromaterapia: no diagnostican, tratan ni curan enfermedades y no reemplazan la consulta médica. Si tienes una condición de salud, estás embarazada o se trata de niños pequeños, consulta antes con tu médico. Los testimonios son opiniones y videos públicos de usuarios y consultoras; los resultados pueden variar. Los videos pertenecen a sus autores en YouTube.</p>
   </div>
 </footer>
 
@@ -383,12 +476,49 @@ footer p{margin:.4em 0}
   <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Escríbeme
 </a>
 
+<script src="productos.js"></script>
 <script>
 const WA='51985258370';
-document.querySelectorAll('[data-wa]').forEach(a=>{
-  a.href='https://wa.me/'+WA+'?text='+encodeURIComponent(a.dataset.wa);
-  a.target='_blank'; a.rel='noopener';
+const waURL=t=>'https://wa.me/'+WA+'?text='+encodeURIComponent(t);
+function enlazarWA(root){root.querySelectorAll('[data-wa]').forEach(a=>{a.href=waURL(a.dataset.wa);a.target='_blank';a.rel='noopener';});}
+enlazarWA(document);
+// Menú lateral
+const cajon=document.getElementById('cajon'),velo=document.getElementById('velo');
+const menu=on=>{cajon.classList.toggle('on',on);velo.classList.toggle('on',on);};
+document.getElementById('abrirMenu').onclick=()=>menu(true);
+document.getElementById('cerrarMenu').onclick=()=>menu(false);
+velo.onclick=()=>menu(false);
+cajon.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>menu(false)));
+// Videos (se cargan al tocarlos)
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function videoHTML([id,tit]){return '<div><button class="vid" data-yt="'+id+'" aria-label="Ver video: '+esc(tit)+'"><img loading="lazy" src="https://i.ytimg.com/vi/'+id+'/hqdefault.jpg" alt=""><span class="pl"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></span></button><p class="vcap">'+esc(tit)+' · <a href="https://www.youtube.com/watch?v='+id+'" target="_blank" rel="noopener">ver en YouTube</a></p></div>';}
+document.addEventListener('click',e=>{const b=e.target.closest('.vid[data-yt]');if(!b)return;e.stopPropagation();b.outerHTML='<div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/'+b.dataset.yt+'?autoplay=1&rel=0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Video"></iframe></div>';});
+document.querySelectorAll('[data-vids]').forEach(d=>{d.innerHTML=JSON.parse(d.dataset.vids).map(videoHTML).join('');});
+// Fichas de producto
+const fv=document.getElementById('fichaVelo'),ficha=document.getElementById('ficha');
+let ultimo=null;
+function abrirFicha(id){const p=(window.PRODUCTOS||{})[id];if(!p)return;
+  let h='<button class="cerrar" id="cerrarFicha" aria-label="Cerrar">×</button>';
+  h+='<div class="ficha-head"><img src="'+p.img+'" alt="'+esc(p.nombre)+'"><div><span class="kicker">Ficha del producto</span><h2>'+esc(p.nombre)+'</h2><p>'+esc(p.intro)+'</p></div></div><div class="ficha-body">';
+  h+='<h4>¿Para qué sirve?</h4><ul>'+p.beneficios.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>';
+  h+='<h4>¿Cómo usarlo?</h4><ul>'+p.uso.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>';
+  h+='<h4>Ingredientes principales</h4><div class="ingr">'+esc(p.ingredientes)+'</div>';
+  if(p.historias&&p.historias.length)h+='<h4>🎥 Historias de quienes lo usan</h4><div class="vids">'+p.historias.map(videoHTML).join('')+'</div>';
+  if(p.testimonios&&p.testimonios.length)h+='<h4>💬 Lo que dicen</h4>'+p.testimonios.map(t=>'<div class="testi"><div class="stars">★★★★★</div><blockquote>“'+esc(t[0])+'”</blockquote><cite>'+esc(t[1])+'</cite></div>').join('');
+  if(p.videos&&p.videos.length)h+='<h4>▶️ Aprende a usarlo</h4><div class="vids">'+p.videos.map(videoHTML).join('')+'</div>';
+  h+='<div class="cta"><p>¿Quieres el '+esc(p.nombre)+' o tienes dudas? Escríbeme y te asesoro.</p><a class="btn" data-wa="Hola Ana, vi la ficha de '+esc(p.nombre)+' en tu página y quiero información" href="#">Escríbeme</a></div></div>';
+  ficha.innerHTML=h;enlazarWA(ficha);ficha.scrollTop=0;fv.classList.add('on');document.body.style.overflow='hidden';
+  document.getElementById('cerrarFicha').onclick=cerrarFicha;document.getElementById('cerrarFicha').focus();
+  try{history.replaceState(null,'','#'+id)}catch(e){}}
+function cerrarFicha(){fv.classList.remove('on');ficha.innerHTML='';document.body.style.overflow='';try{history.replaceState(null,'',location.pathname)}catch(e){} if(ultimo)ultimo.focus();}
+fv.addEventListener('click',e=>{if(e.target===fv)cerrarFicha();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(fv.classList.contains('on'))cerrarFicha();else menu(false);}});
+document.querySelectorAll('.prod[data-id]').forEach(c=>{
+  c.addEventListener('click',e=>{if(e.target.closest('a'))return;ultimo=c;abrirFicha(c.dataset.id);});
+  c.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target===c){ultimo=c;abrirFicha(c.dataset.id);}});
 });
+const h0=location.hash.slice(1);if(window.PRODUCTOS&&PRODUCTOS[h0])abrirFicha(h0);
+// Barra de temas (escritorio)
 const links=[...document.querySelectorAll('.temas a')];
 const secs=links.map(l=>document.querySelector(l.getAttribute('href')));
 const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id));}})},{rootMargin:'-40% 0px -55% 0px'});
